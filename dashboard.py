@@ -169,8 +169,3 @@ if st.button('Predict',on_click = callback1) or st.session_state['btn_clicked']:
         #Display bivariate analysis
         bivariate_analysis(selected_feature1, selected_feature2)
         st.text("A graphical analysis of the relationship between two selected features for the same target as the client.")
-            
-
-
-
-
