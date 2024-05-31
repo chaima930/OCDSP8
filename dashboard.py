@@ -111,11 +111,13 @@ def bivariate_analysis(feature1, feature2):
 parquet_file = 'data/df_test.parquet'
 table = pq.read_table(parquet_file)
 df = table.to_pandas()
+df=df.drop("index",axis= 1)
 df['SK_ID_CURR'] = df['SK_ID_CURR'].astype(int)
 
 train_data= 'data/df_train.parquet'
 train_table = pq.read_table(train_data)
 df_train = train_table.to_pandas()
+df_train=df_train.drop("index",axis= 1)
 df_train['SK_ID_CURR'] = df_train['SK_ID_CURR'].astype(int)
 
 # Streamlit app
