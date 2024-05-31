@@ -49,7 +49,6 @@ def get_prediction(data):
         response = requests.post(api_url, json=df_test)
         response.raise_for_status()
         result = response.json()
-        st.write("API response:", result)  # Log the API response for debugging
         
         if 'prediction' not in result:
             st.error("The 'prediction' key is missing from the API response.")
