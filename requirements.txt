@@ -1,0 +1,16 @@
+numpy==1.23.5
+pandas==2.2.1
+lightgbm==4.3.0
+streamlit==1.32.2
+requests==2.31.0
+pyarrow==15.0.0
+flask==2.2.2
+scikit-learn==1.4.1.post1
+pytest==7.1.2
+werkzeug==2.2.2
+pluggy==1.4.0
+gunicorn==21.2.0
+plotly==5.20.0
+matplotlib==3.7.0
+seaborn==0.12.2
+shap==0.43.0
