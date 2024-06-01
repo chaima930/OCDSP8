@@ -11,16 +11,9 @@ import seaborn as sns
 # Initialize session state keys
 if 'btn_clicked' not in st.session_state:
     st.session_state['btn_clicked'] = False
-if 'btn_clicked2' not in st.session_state:
-    st.session_state['btn_clicked2'] = False
 
 def callback1():
     st.session_state['btn_clicked'] = True
-    st.session_state['btn_clicked2'] = False
-
-def callback2():
-    st.session_state['btn_clicked'] = False
-    st.session_state['btn_clicked2'] = True
 
 def credit_score_gauge(score):
     colors = ['#FF0000', '#FFFF00', '#00FF00']
